@@ -1,0 +1,125 @@
+#be1{
+    width: 200px;
+    height: 274px;
+    background: url(../Styles/Images/img5.jpg);
+    position: relative;
+    top: 65px;
+    right: 75px;
+    opacity: 0.5;
+    
+}
+#be1:hover{
+    transition:1s;
+    opacity: 1.0;
+}
+#be2{
+    width: 200px;
+    height: 274px;
+    background: url(../Styles/Images/img6.jpg);
+    
+    position: relative;
+    top: -225px;
+    left: 200px;
+    opacity: 0.5;
+}
+#be2:hover{
+    transition:1s;
+    opacity: 1.0;
+}
+#be3{
+    width: 200px;
+    height: 274px;
+    background: url(../Styles/Images/img7.jpg);
+    
+    position: relative;
+    top: -150px;
+    right: 100px;
+    opacity: 0.5;
+}
+#be3:hover{
+    transition:1s;
+    opacity:1.0;
+}
+#be4{
+    width: 200px;
+    height: 274px;
+    background: url(../Styles/Images/img8.jpg);
+
+    position: relative;
+    top: -425px;
+    left: 200px;
+    opacity: 0.5;
+}
+#be4:hover{
+    transition:1s;
+    opacity: 1.0;
+}
+
+.blo{
+    width: 800px;
+    height: 700px;
+    background: white;
+    box-shadow: 8px 8px 10px black;
+    position: relative;
+    top: 250px;
+}
+#bo{
+    width: 35px;
+    height: 35px;
+    background: red;
+    box-shadow: 4px 4px black;
+    position: relative;
+    left: 350px;
+    top: -700px;
+}
+
+@keyframes anim{
+0% {
+    right:75px;
+}
+50%{
+
+    right:175px;
+}
+100%{
+    right: 75px;
+    
+}
+}
+
+@keyframes anim1{
+    0%{
+        left: 200px;
+    }
+    50%{
+        left: 100px;
+    }
+    100%{
+        left: 200px;
+    }
+}
+
+@keyframes anim2{
+    0%{
+    right: 100px;
+    }
+    50%{
+    right: 200px;
+    }
+    100%{
+        right: 100px;
+    }
+}
+@keyframes anim3{
+    0%{
+        left: 200px;
+    }
+    50%{
+        left: 100px;
+        
+    }
+    100%{
+        left: 200px;
+        
+    }
+}

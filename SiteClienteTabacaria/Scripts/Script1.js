@@ -1,0 +1,1 @@
+alert('site está sendo carregado, aguarde')
