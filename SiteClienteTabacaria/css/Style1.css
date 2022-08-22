@@ -45,7 +45,11 @@ nav{
     display: flex;
 
 }
+.icon{
+    width: 35px;
+}
 .nav-item-box{
+    display: flex;
     margin: 0.2rem;
     padding: 0.2rem;
 
@@ -58,9 +62,6 @@ nav{
 .nav-link:hover{
   color: orange;
   transition: 0.5s;
-  border-style: solid;
-  border-color: aqua;
-  border-width: 1px;
   
 }
 #demo{
