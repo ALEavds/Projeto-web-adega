@@ -54,14 +54,25 @@ nav{
     padding: 0.2rem;
 
 }
-.nav-link{
+.nav-link{display: flex;
   color: white;
+  position: relative;
   cursor: pointer;
-  
+}
+.nav-link::after{
+    content: " ";
+    height: 3px;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
 }
 .nav-link:hover{
-  color: orange;
-  transition: 0.5s;
+    color: orange;
+}
+.nav-link:hover::after{
+  width: 100%;
   
 }
 #demo{
