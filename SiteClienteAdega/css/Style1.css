@@ -10,7 +10,7 @@ ul{
 }
 
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(24, 24, 24);
     font-family: sans-serif;
     color: white;
 }
@@ -54,7 +54,8 @@ nav{
     padding: 0.2rem;
 
 }
-.nav-link{display: flex;
+.nav-link{
+    display: flex;
   color: white;
   position: relative;
   cursor: pointer;
@@ -66,14 +67,12 @@ nav{
     position: absolute;
     left: 0;
     bottom: 0;
-    
 }
 .nav-link:hover{
     color: orange;
 }
 .nav-link:hover::after{
   width: 100%;
-  
 }
 #demo{
     width: 900px;
