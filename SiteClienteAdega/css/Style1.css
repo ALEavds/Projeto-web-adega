@@ -10,7 +10,7 @@ ul{
 }
 
 body{
-    background-color: rgb(24, 24, 24);
+    background-color: #181818;
     font-family: sans-serif;
     color: white;
 }
@@ -63,13 +63,13 @@ nav{
 .nav-link::after{
     content: " ";
     height: 3px;
-    background-color: orange;
+    background-color: rgb(255, 165, 0);
     position: absolute;
     left: 0;
     bottom: 0;
 }
 .nav-link:hover{
-    color: orange;
+    color: rgb(255, 165, 0);
 }
 .nav-link:hover::after{
   width: 100%;
