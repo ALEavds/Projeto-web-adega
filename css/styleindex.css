@@ -1,0 +1,89 @@
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #181818;
+    font-family: sans-serif;
+    color: white;
+}
+main{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    width: 100%;
+}
+.header-bg {
+    overflow: hidden;
+    max-height: 200px;
+    width: 100%;
+}
+
+header>div>img {
+    display: block;
+    width: 100%;
+}
+/* NAV BAR STYLE */
+nav{
+    padding: 0.2rem;    
+    width: 100%;
+    font-size: 1.8rem;
+    font-family: 'Fjalla One', sans-serif;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-box{
+    margin-left: 5px;
+}
+.logo-box>img{
+    width: 100px;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+
+}
+.icon{
+    max-width:2.5rem;
+}
+.nav-item-box{
+    display: flex;
+    margin: 0.2rem;
+    padding: 0.2rem;
+
+}
+.nav-link{
+  display: flex;
+  color: white;
+  position: relative;
+  cursor: pointer;
+}
+.nav-link::after{
+    content: " ";
+    height: 3px;
+    background-color: rgb(255, 165, 0);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.nav-link:hover{
+    color: rgb(255, 165, 0);
+}
+.nav-link:hover::after{
+  width: 100%;
+}
+#demo{
+    width: 900px;
+}
