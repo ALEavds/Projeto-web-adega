@@ -20,6 +20,7 @@ main{
     flex-direction: column;
     align-items: center;
 }
+/* ----HEADER STYLE---- */
 header{
     width: 100%;
 }
@@ -33,7 +34,7 @@ header>div>img {
     display: block;
     width: 100%;
 }
-/* NAV BAR STYLE */
+/* ----NAV BAR STYLE---- */
 nav{
     padding: 0.2rem;    
     width: 100%;
@@ -53,16 +54,15 @@ nav{
 .nav-list{
     list-style: none;
     display: flex;
-
 }
 .icon{
     max-width:2.5rem;
 }
+/* ----NAV ITEMS STYLE---- */
 .nav-item-box{
     display: flex;
     margin: 0.2rem;
     padding: 0.2rem;
-
 }
 .nav-link{
   display: flex;
@@ -70,6 +70,7 @@ nav{
   position: relative;
   cursor: pointer;
 }
+/* ----NAV ITEMS HOVER EFFECT---- */
 .nav-link::after{
     content: " ";
     height: 3px;
@@ -84,6 +85,22 @@ nav{
 .nav-link:hover::after{
   width: 100%;
 }
+/* ----SUB MENU---- */
+.sub-menu{
+    list-style: none;
+}
+.sub-menu-link{
+    text-decoration: none;
+    color: white;
+}
+/* ----CAROUSEL STYLE---- */
 #demo{
     width: 900px;
+}
+/*--------HIDE-NAV-ITEMS--------*/
+
+@media(max-width:860px) {
+    .item-box {
+        display: none;
+    }
 }
