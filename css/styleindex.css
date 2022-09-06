@@ -49,7 +49,7 @@ nav{
     margin-left: 5px;
 }
 .logo-box>img{
-    width: 100px;
+    width: 80px;
 }
 .nav-list{
     list-style: none;
@@ -81,6 +81,7 @@ nav{
 }
 .nav-link:hover{
     color: rgb(255, 165, 0);
+    
 }
 .nav-link:hover::after{
   width: 100%;
@@ -88,6 +89,7 @@ nav{
 /* ----SUB MENU---- */
 .sub-menu{
     list-style: none;
+    display: none;
 }
 .sub-menu-link{
     text-decoration: none;
