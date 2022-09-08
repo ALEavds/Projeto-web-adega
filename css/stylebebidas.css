@@ -1,28 +1,32 @@
-
 * {
     margin: 0;
     padding: 0;
 
 }
-ul{
+
+ul {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: #181818;
     font-family: sans-serif;
     color: white;
 }
-main{
+
+main {
 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-header{
+
+/* ----HEADER STYLE---- */
+header {
     width: 100%;
 }
+
 .header-bg {
     overflow: hidden;
     max-height: 200px;
@@ -33,9 +37,9 @@ header>div>img {
     display: block;
     width: 100%;
 }
-/* NAV BAR STYLE */
-nav{
-    padding: 0.2rem;    
+
+/* ----NAV BAR STYLE---- */
+nav {
     width: 100%;
     font-size: 1.8rem;
     font-family: 'Fjalla One', sans-serif;
@@ -44,46 +48,99 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
-.logo-box{
+
+.logo-box {
     margin-left: 5px;
 }
-.logo-box>img{
-    width: 100px;
+
+.logo-box>img {
+    width: 80px;
 }
-.nav-list{
+
+.nav-list {
     list-style: none;
     display: flex;
+}
 
+.icon {
+    max-width: 2.5rem;
 }
-.icon{
-    max-width:2.5rem;
-}
-.nav-item-box{
+
+/* ----NAV ITEMS STYLE---- */
+
+.nav-item-box {
     display: flex;
     margin: 0.2rem;
     padding: 0.2rem;
+}
 
-}
-.nav-link{
+.nav-link {
     display: flex;
-  color: white;
-  position: relative;
-  cursor: pointer;
+    color: white;
+    position: relative;
+    cursor: pointer;
 }
-.nav-link::after{
+
+.active-item {
+    color: rgb(255, 165, 0);
+}
+.active-item::after{
     content: " ";
     height: 3px;
-    background-color: rgb(255, 165, 0);
+    background-color:rgb(255, 165, 0) ;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+}
+/* ----NAV ITEMS HOVER EFFECT---- */
+.nav-link::after {
+    content: " ";
+    height: 3px;
+    background-color:rgb(255, 165, 0) ;
     position: absolute;
     left: 0;
     bottom: 0;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: rgb(255, 165, 0);
+
 }
-.nav-link:hover::after{
-  width: 100%;
+
+.nav-link:hover::after {
+    width: 100%;
 }
-#demo{
+
+/* ----SUB MENU---- */
+.sub-menu {
+    list-style: none;
+    display: none;
+}
+
+.sub-menu-link {
+    text-decoration: none;
+    color: white;
+}
+
+#btn-menu {
+    display: none;
+}
+
+/* ----CAROUSEL STYLE---- */
+#demo {
     width: 900px;
+}
+
+/*--------HIDE/SHOW-NAV-ITEMS--------*/
+
+@media(max-width:860px) {
+    .item-box {
+        display: none;
+    }
+
+    #btn-menu {
+        display: block;
+    }
 }
