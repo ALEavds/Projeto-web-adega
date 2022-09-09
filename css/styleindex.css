@@ -75,7 +75,6 @@ nav {
 }
 
 .nav-link {
-    display: flex;
     color: white;
     position: relative;
     cursor: pointer;

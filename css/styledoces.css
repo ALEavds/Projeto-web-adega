@@ -75,7 +75,7 @@ nav {
 }
 
 .nav-link {
-    display: flex;
+
     color: white;
     position: relative;
     cursor: pointer;
@@ -114,24 +114,32 @@ nav {
 }
 
 /* ----SUB MENU---- */
-.sub-menu {
-    list-style: none;
-    display: none;
-}
-
-.sub-menu-link {
-    text-decoration: none;
-    color: white;
-}
-
-#btn-menu {
-    display: none;
-}
-
-/* ----CAROUSEL STYLE---- */
-#demo {
-    width: 900px;
-}
+.adega-box {
+    display: block;
+    }
+    .adega-box:hover .sub-menu{
+        display: block;
+    }
+    
+    .sub-menu {
+        display: none;
+        background-color: rgba(24, 24, 24, 0.651);
+        list-style: none;
+        position: absolute;
+        z-index: 1000;
+    }
+    
+    .sub-menu-link {
+        text-decoration: none;
+        color: white;
+    }
+    .sub-menu-link:hover{
+        color:rgb(255, 165, 0) ;
+    }
+    
+    #btn-menu {
+        display: none;
+    }
 
 /*--------HIDE/SHOW-NAV-ITEMS--------*/
 
